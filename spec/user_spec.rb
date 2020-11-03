@@ -16,5 +16,11 @@ describe User do
       user = User.new("George", date_of_birth)
       expect(user.age).to eq 35
     end
+
+    it "returns the correct current age of the user each time" do 
+      date_of_birth = Date.new(1986,1,1)
+      user = User.new("George", date_of_birth)
+      expect(user.age).to eq 36
+    end
   end
 end
