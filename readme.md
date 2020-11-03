@@ -1,3 +1,12 @@
+## Set up
+
+Tests: from the root of the project run
+
+```
+bundle install
+rspec
+```
+
 # Examples
 
 The age should return the user's current age, and the "next birthday" should return a date which is the user's next birthday. For example if the user's date of birth is 1st November 1985 then their age will be 35 and their next birthday will be 2021-11-01.
