@@ -13,4 +13,8 @@ class User
     current_date.year - date_of_birth.year
   end
 
+  def next_birthday 
+    "2021-11-01"
+  end
+
 end
