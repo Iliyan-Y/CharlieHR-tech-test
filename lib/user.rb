@@ -9,7 +9,8 @@ class User
   end
 
   def age
-    return 35 
+    current_date = Date.today
+    current_date.year - date_of_birth.year
   end
 
 end
