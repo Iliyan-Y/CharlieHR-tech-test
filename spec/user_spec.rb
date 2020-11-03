@@ -10,7 +10,7 @@ describe User do
     expect(user.date_of_birth).to eq date_of_birth
   end
   
-  describe "#Age" do 
+  describe "#age" do 
     it "returns the current age of the user" do 
       date_of_birth = Date.new(1985,11,1)
       user = User.new("George", date_of_birth)
@@ -27,6 +27,14 @@ describe User do
       date_of_birth = Date.new(1988, Date.today.month, Date.today.day)
       user = User.new("George", date_of_birth)
       expect(user.age).to eq 32
+    end
+  end
+
+  describe "#next_birthday" do 
+    it "return the user's next birthday" do 
+      date_of_birth = Date.new(1985,11,1)
+      user = User.new("George", date_of_birth)
+      expect(user.next_birthday).to eq "2021-11-01"
     end
   end
 end
