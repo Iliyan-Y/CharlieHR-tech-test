@@ -36,5 +36,11 @@ describe User do
       user = User.new("George", date_of_birth)
       expect(user.next_birthday).to eq "2021-11-01"
     end
+
+    it "return different user next birthday" do 
+      date_of_birth = Date.new(1986,1,1)
+      user = User.new("George", date_of_birth)
+      expect(user.next_birthday).to eq "2021-01-01"
+    end
   end
 end
