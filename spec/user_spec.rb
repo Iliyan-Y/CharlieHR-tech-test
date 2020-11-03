@@ -10,5 +10,11 @@ describe User do
     expect(user.date_of_birth).to eq date_of_birth
   end
   
-
+  describe "#Age" do 
+    it "returns the current age of the user" do 
+      date_of_birth = Date.new(1985,11,1)
+      user = User.new("George", date_of_birth)
+      expect(user.age).to eq 35
+    end
+  end
 end
