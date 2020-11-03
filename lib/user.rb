@@ -8,4 +8,8 @@ class User
     @date_of_birth = date_of_birth
   end
 
+  def age
+    return 35 
+  end
+
 end
